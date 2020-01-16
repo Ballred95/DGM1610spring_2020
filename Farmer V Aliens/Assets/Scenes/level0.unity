@@ -220,6 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1106426106}
+  - component: {fileID: 1106426107}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -241,6 +242,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1106426107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106426105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2849233cf277c1747a7858cac05ad2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 0
+  money: 0
+  cost: 0
+  cookieBox: 20
+  waterBottle: 0
+  rbi: 0
 --- !u!1 &1206380409
 GameObject:
   m_ObjectHideFlags: 0

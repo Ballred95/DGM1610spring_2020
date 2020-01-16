@@ -5,7 +5,7 @@ using UnityEngine;
 public class Test : MonoBehaviour
 
 {
-    public int amount;
+    public float amount;
     public float money;
     public float cost; 
     //Declaration
@@ -13,6 +13,8 @@ public class Test : MonoBehaviour
    public float waterBottle;
    private string firstName;
    public double rbi;
+    
+    
   
     //type
     GameObject player;
@@ -21,9 +23,7 @@ public class Test : MonoBehaviour
 
 
     //Access modifier
-    public 
-        private
-   
+    
     
 
     // Start is called before the first frame update
@@ -32,14 +32,21 @@ public class Test : MonoBehaviour
     {
         Cookies(amount, money, cost);
         //function call
-        CheckScore();
+        
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        void Cookies(int amount, float money, float cost);
+        
 
     }
+    void Cookies(float amount, float money, float cost)
+    {
+    float total;
+        total= cost - money + cost;
+
+    }
+
 }
