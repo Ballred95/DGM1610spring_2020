@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Test : MonoBehaviour
-
+  
 {
     public float amount;
     public float money;
-    public float cost; 
+    public float cost;
     //Declaration
     public int cookieBox = 20;
    public float waterBottle;
    private string firstName;
    public double rbi;
+   public string obiWan = "Hello there";
+    public string madaphonil = "is cool";
+    string answer = "The total is";
     
     
   
@@ -27,11 +30,16 @@ public class Test : MonoBehaviour
     
 
     // Start is called before the first frame update
+    
     void Start()
          
     {
-        Cookies(amount, money, cost);
         //function call
+        Cookies(amount, money, cost);
+        print(obiWan);
+        
+        
+        
         
         
     }
@@ -42,11 +50,13 @@ public class Test : MonoBehaviour
         
 
     }
-    void Cookies(float amount, float money, float cost)
+    void Cookies( float amount, float money, float cost)
     {
-    float total;
-        total= cost - money + cost;
+     float total = money - amount * cost;
+        
 
     }
+
+    
 
 }
