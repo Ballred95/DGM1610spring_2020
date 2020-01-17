@@ -16,7 +16,7 @@ public class Test : MonoBehaviour
    public string obiWan = "Hello there";
     public string madaphonil = "is cool";
     string answer = "The total is";
-    
+    public double total = 32.3;
     
   
     //type
@@ -52,7 +52,8 @@ public class Test : MonoBehaviour
     }
     void Cookies( float amount, float money, float cost)
     {
-     float total = money - amount * cost;
+        float total;
+        total= money - amount * cost;
         
 
     }
