@@ -15,8 +15,8 @@ public class Test : MonoBehaviour
    public double rbi;
    public string obiWan = "Hello there";
     public string madaphonil = "is cool";
-    string answer = "The total is";
-    public double total = 32.3;
+    string answer = "The total is ";
+    
     
   
     //type
@@ -35,8 +35,9 @@ public class Test : MonoBehaviour
          
     {
         //function call
-        Cookies(amount, money, cost);
         print(obiWan);
+        Cookies(amount, money, cost);
+        
         
         
         
@@ -47,17 +48,18 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+   
 
     }
     void Cookies( float amount, float money, float cost)
     {
         float total;
         total= money - amount * cost;
-        
+        print(answer + total);
 
     }
 
+    
     
 
 }
