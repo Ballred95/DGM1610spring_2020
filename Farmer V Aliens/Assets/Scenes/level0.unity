@@ -346,15 +346,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2849233cf277c1747a7858cac05ad2f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 4
-  money: 3
-  cost: 5
+  amount: 54
+  money: 2
+  cost: 0
   cookieBox: 20
   waterBottle: 0
   rbi: 0
   obiWan: Hello there
   madaphonil: is cool
-  total: 32.3
 --- !u!1 &1206380409
 GameObject:
   m_ObjectHideFlags: 0
