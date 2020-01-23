@@ -13,7 +13,8 @@ public class Moo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        transform.Translate(0,0.5f,0);
     }
 
     //Detect collision with another object
