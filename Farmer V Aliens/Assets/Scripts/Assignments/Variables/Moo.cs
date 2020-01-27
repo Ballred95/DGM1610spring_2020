@@ -23,17 +23,12 @@ public class Moo : MonoBehaviour
         
     }
 
-    
-    //Detect collision with another object
     private void OnCollisionEnter(Collision other)
     {
-        
-
+        Destroy(other.gameObject);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
 
 }
+
+

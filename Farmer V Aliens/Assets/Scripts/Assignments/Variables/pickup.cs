@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class pickup : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider collider)
-    {
-        if (collider.gameObject.tag == "Player")
-        {
-            print("item picked up");
-            Destroy(gameObject);
-        }
+    
+   
 
-    }
-
-    // Start is called before the first frame update
-    void Start()
+        // Start is called before the first frame update
+        void Start()
     {
+
         
     }
 
