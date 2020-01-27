@@ -15,18 +15,22 @@ public class Moo : MonoBehaviour
     
     void Update()
     {
-        transform.Translate(0.2f, 0, 0);
+        transform.Translate(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+       // print(Input.GetAxis("Horizontal"));
         
     }
 
     
     //Detect collision with another object
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
         
 
     }
 
-   
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
 
 }
