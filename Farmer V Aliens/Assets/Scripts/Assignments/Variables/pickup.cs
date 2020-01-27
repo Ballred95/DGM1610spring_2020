@@ -2,31 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Moo : MonoBehaviour
-    
+public class pickup : MonoBehaviour
 {
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            print("item picked up");
+            Destroy(gameObject);
+        }
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
-    
+
     // Update is called once per frame
-    
     void Update()
     {
-        transform.Translate(0.2f, 0, 0);
-        
-    }
-
-    
-    //Detect collision with another object
-    private void OnCollisionEnter(Collision collision)
-    {
         
 
     }
-
-   
-
 }
