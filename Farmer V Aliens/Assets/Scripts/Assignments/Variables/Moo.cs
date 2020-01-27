@@ -10,13 +10,16 @@ public class Moo : MonoBehaviour
     {
         
     }
-    
+
     // Update is called once per frame
-    
+
+    public float moveSpeed;
     void Update()
     {
-        transform.Translate(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-       // print(Input.GetAxis("Horizontal"));
+        moveSpeed = .09f;
+
+        transform.Translate(moveSpeed*Input.GetAxis("Horizontal"), 0f, moveSpeed*Input.GetAxis("Vertical"));
+      
         
     }
 
