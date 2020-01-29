@@ -5,6 +5,10 @@ using UnityEngine;
 public class Moo : MonoBehaviour
 
 {
+    public float speed;
+    public float verticalInput;
+    public float horizontalInput;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +18,21 @@ public class Moo : MonoBehaviour
     // Update is called once per frame
 
     public float moveSpeed;
+    public float turnSpeed;
+    
     void Update()
     {
-        moveSpeed = .09f;
+        moveSpeed = 10f;
+        turnSpeed = 150f;
 
-        transform.Translate(moveSpeed * Input.GetAxis("Horizontal"), 0f, moveSpeed * Input.GetAxis("Vertical"));
+        /*transform.Translate(moveSpeed * Input.GetAxis("Horizontal"), 0f, moveSpeed * Input.GetAxis("Vertical")); */
+
+        verticalInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal");
+
+
+        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * verticalInput);
+        transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
 
 
     }

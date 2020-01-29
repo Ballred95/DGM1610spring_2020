@@ -461,6 +461,16 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
+    - target: {fileID: 4192549577476470295, guid: c4723fe7874e8664380ae47244928ebe,
+        type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192549577476470295, guid: c4723fe7874e8664380ae47244928ebe,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4723fe7874e8664380ae47244928ebe, type: 3}
 --- !u!1 &775442545
@@ -567,7 +577,7 @@ GameObject:
   - component: {fileID: 831325977}
   - component: {fileID: 831325976}
   m_Layer: 0
-  m_Name: outside
+  m_Name: Outside
   m_TagString: Outside
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
