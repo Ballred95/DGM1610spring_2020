@@ -60,6 +60,11 @@ public class Moo : MonoBehaviour
             Debug.Log("Entered button trigger area");
         }
        
+        else if (other.gameObject.CompareTag("Outside"))
+        {
+            Debug.Log("Fell off");
+
+        }
     }
 
     
