@@ -37,16 +37,32 @@ public class Moo : MonoBehaviour
         {
             Debug.Log("Colliding with Obstacle");
 
+
         }
 
+        else if (other.gameObject.CompareTag("Button"))
+        {
+
+            Debug.Log("hit button");
+        }
+                
+
+                
+                
+                
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("You have entered the trigger zone");
+        if(other.gameObject.CompareTag("ButtonTrigger"))
+        {
+            Debug.Log("Entered button trigger area");
+        }
        
     }
 
+    
 }
 
 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Floor
   - Obstacle
+  - Button
+  - ButtonTrigger
   layers:
   - Default
   - TransparentFX
