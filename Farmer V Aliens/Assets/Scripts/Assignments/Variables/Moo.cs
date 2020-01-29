@@ -44,6 +44,7 @@ public class Moo : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("You have entered the trigger zone");
+       
     }
 
 }
