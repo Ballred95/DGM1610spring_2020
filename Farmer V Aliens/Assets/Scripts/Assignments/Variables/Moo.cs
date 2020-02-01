@@ -25,6 +25,7 @@ public class Moo : MonoBehaviour
         moveSpeed = 10f;
         turnSpeed = 150f;
 
+
         /*transform.Translate(moveSpeed * Input.GetAxis("Horizontal"), 0f, moveSpeed * Input.GetAxis("Vertical")); */
 
         verticalInput = Input.GetAxis("Vertical");
