@@ -608,6 +608,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4192549577476470298, guid: c4723fe7874e8664380ae47244928ebe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4192549577476470294, guid: c4723fe7874e8664380ae47244928ebe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -875,8 +880,9 @@ GameObject:
   - component: {fileID: 887718437}
   - component: {fileID: 887718436}
   - component: {fileID: 887718440}
+  - component: {fileID: 887718441}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -967,6 +973,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 1.1, z: 1.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &887718441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887718435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6503b529e3c93d40ac3697df7eef977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsToAdd: 100
 --- !u!1 &935684713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,6 +1089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1106426106}
   - component: {fileID: 1106426107}
+  - component: {fileID: 1106426108}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1111,6 +1131,18 @@ MonoBehaviour:
   rbi: 0
   obiWan: Hello there
   madaphonil: is cool
+--- !u!114 &1106426108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106426105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691dbde9e88893a4bbb62e3a71ae4b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1206380409
 GameObject:
   m_ObjectHideFlags: 0
