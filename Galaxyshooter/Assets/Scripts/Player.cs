@@ -46,10 +46,10 @@ public class Player : MonoBehaviour
 
         //transform.Translate(Vector3.right * speed * horizontalMouse * Time.deltaTime);
         //transform.Translate(Vector3.up * speed * verticalMouse * Time.deltaTime);
-        //ransform.Translate(Vector3.right * speed * horizontalInput * Time.deltaTime);
-        //ansform.Translate(Vector3.up * speed * verticalInput * Time.deltaTime);
-        //ansform.Rotate(Vector3.up * 150 * verticalMouse * Time.deltaTime);
-        //ransform.Rotate(Vector3.right * 150 * horizontalMouse * Time.deltaTime);
+        //transform.Translate(Vector3.right * speed * horizontalInput * Time.deltaTime);
+        //tansform.Translate(Vector3.up * speed * verticalInput * Time.deltaTime);
+        //tansform.Rotate(Vector3.up * 150 * verticalMouse * Time.deltaTime);
+        //transform.Rotate(Vector3.right * 150 * horizontalMouse * Time.deltaTime);
 
         Vector3 direction = new Vector3(horizontalInput, verticalInput, 0);
         transform.Translate(direction * speed * Time.deltaTime);
