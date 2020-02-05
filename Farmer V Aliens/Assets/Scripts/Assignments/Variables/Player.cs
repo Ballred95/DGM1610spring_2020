@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Moo : MonoBehaviour
+public class Player : MonoBehaviour
 
 {
     public float speed;
     public float verticalInput;
     public float horizontalInput;
     [SerializeField]
+    private GameObject laserPreFab;
    
 
     // Start is called before the first frame update
@@ -37,7 +38,11 @@ public class Moo : MonoBehaviour
         transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * verticalInput);
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
 
-       
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(laserPreFab, transform.position, Quaternion.identity);
+            Debug.Log("Hit space key");
+        }
 
 
     }
