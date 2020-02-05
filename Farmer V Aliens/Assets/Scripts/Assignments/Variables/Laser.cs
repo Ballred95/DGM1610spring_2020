@@ -19,5 +19,17 @@ public class Laser : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
         Destroy(this.gameObject, 5f);
 
+        
+ 
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.CompareTag("Obstacle"))
+        {
+            Destroy(collision.gameObject);
+            Debug.Log("Destroyed obstacle");
+        }
     }
 }
