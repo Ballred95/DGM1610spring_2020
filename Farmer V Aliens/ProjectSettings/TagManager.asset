@@ -9,6 +9,7 @@ TagManager:
   - Button
   - ButtonTrigger
   - Outside
+  - Laser
   layers:
   - Default
   - TransparentFX

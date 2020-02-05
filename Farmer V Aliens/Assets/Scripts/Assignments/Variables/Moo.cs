@@ -8,6 +8,8 @@ public class Moo : MonoBehaviour
     public float speed;
     public float verticalInput;
     public float horizontalInput;
+    [SerializeField]
+   
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,8 @@ public class Moo : MonoBehaviour
 
         transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * verticalInput);
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
+
+       
 
 
     }
@@ -82,7 +86,7 @@ public class Moo : MonoBehaviour
         }
     }
 
-    
+  
 }
 
 
