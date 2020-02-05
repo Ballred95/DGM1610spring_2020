@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
+
+    public int speed = 8;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,7 @@ public class Laser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
+
     }
 }

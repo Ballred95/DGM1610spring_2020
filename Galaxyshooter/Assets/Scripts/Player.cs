@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    [SerializeField]
+    private GameObject laserPreFab; 
+    [SerializeField]
     public float speed = 5.3f;
     // Start is called before the first frame update
     void Start()
@@ -22,14 +24,25 @@ public class Player : MonoBehaviour
     {
 
         calcMove();
+
+        //if i hit space key, 
+        //spawn gameObject
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(laserPreFab, transform.position, Quaternion.identity);
+            Debug.Log("Hit space key");
+        }
+
     }
 
     void calcMove()
+
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         float horizontalMouse = Input.GetAxis("Mouse X");
         float verticalMouse = Input.GetAxis("Mouse Y");
+
 
         //transform.Translate(Vector3.right * speed * horizontalMouse * Time.deltaTime);
         //transform.Translate(Vector3.up * speed * verticalMouse * Time.deltaTime);
