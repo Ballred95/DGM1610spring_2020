@@ -6,7 +6,7 @@ public class ScoreManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public static int score = 350;
+    public static int score;
 
     void Start()
     {
@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("GameScore " + score);
+      
         
     }
 
@@ -25,6 +25,6 @@ public class ScoreManager : MonoBehaviour
     {
 
         score += pointsToAdd;
-
+        Debug.Log("GameScore " + score);
     }
 }
