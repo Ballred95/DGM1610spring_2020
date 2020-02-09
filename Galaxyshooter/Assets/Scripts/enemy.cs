@@ -21,7 +21,7 @@ public class enemy : MonoBehaviour
         transform.Translate(Vector3.down * speed * Time.deltaTime);
 
         if (transform.position.y < -4f)
-            transform.position = new Vector3(Random.Range(-7f, 8f), 8, .32f);
+            transform.position = new Vector3(Random.Range(-7f, 8f), 8, .32f); 
 
     }
 }
