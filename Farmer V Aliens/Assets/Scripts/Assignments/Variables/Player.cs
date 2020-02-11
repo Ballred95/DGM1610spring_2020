@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(laserPreFab, transform.position, Quaternion.identity);
+            Instantiate(laserPreFab, transform.position, laserPreFab.transform.rotation);
             Debug.Log("Hit space key");
         }
 
