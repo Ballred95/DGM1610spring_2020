@@ -10,7 +10,9 @@ public class Player : MonoBehaviour
     public float horizontalInput;
     [SerializeField]
     private GameObject laserPreFab;
-   
+    public float fireRate = 2f;
+    private float canFire = -1f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,14 +40,17 @@ public class Player : MonoBehaviour
         transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * verticalInput);
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > canFire)
         {
-            Instantiate(laserPreFab, transform.position + (Vector3.forward * 2), laserPreFab.transform.rotation);
+            canFire = fireRate * Time.time;
+            Instantiate(laserPreFab, transform.position + (Vector3.forward * 2), Quaternion.identity);
             Debug.Log("Hit space key");
         }
 
 
     }
+
+
 
     private void OnCollisionEnter(Collision other)
 

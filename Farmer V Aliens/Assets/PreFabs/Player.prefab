@@ -126,5 +126,6 @@ MonoBehaviour:
   horizontalInput: 0
   laserPreFab: {fileID: 2575670609675563341, guid: fe1039b6ac51701448d26144a1112f07,
     type: 3}
+  fireRate: 2
   moveSpeed: 0
   turnSpeed: 0
