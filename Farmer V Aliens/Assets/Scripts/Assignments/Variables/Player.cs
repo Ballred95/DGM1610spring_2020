@@ -33,13 +33,10 @@ public class Player : MonoBehaviour
 
         /*transform.Translate(moveSpeed * Input.GetAxis("Horizontal"), 0f, moveSpeed * Input.GetAxis("Vertical")); */
 
-        verticalInput = Input.GetAxis("Vertical");
-        horizontalInput = Input.GetAxis("Horizontal");
+        Movement();
+       
 
-
-        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * verticalInput);
-        transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
-
+      
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > canFire)
         {
             canFire = fireRate * Time.time;
@@ -58,7 +55,7 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.CompareTag("Floor"))
         {
-            Debug.Log("Colliding with floow");
+            Debug.Log("Colliding with floor");
         }
 
         else if (other.gameObject.CompareTag("Obstacle"))
@@ -96,7 +93,17 @@ public class Player : MonoBehaviour
         }
     }
 
-  
+    void Movement()
+    {
+        verticalInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal");
+
+
+        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime * verticalInput);
+        transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
+    }
+
+    
 }
 
 
