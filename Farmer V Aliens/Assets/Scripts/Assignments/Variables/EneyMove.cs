@@ -18,7 +18,7 @@ public class EneyMove : MonoBehaviour
     void Update()
     {
 
-        transform.LookAt(target);
+        transform.LookAt(target.position);
         transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
 
 

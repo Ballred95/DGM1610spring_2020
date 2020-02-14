@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2344389324965976565
+--- !u!1 &2532845032765193939
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1963669650126540531}
-  - component: {fileID: 8638098636359241929}
-  - component: {fileID: 7744639715899314883}
-  - component: {fileID: 1845016225122379609}
-  - component: {fileID: -831320506690426173}
-  - component: {fileID: -88160650253421430}
+  - component: {fileID: 2532845032765193943}
+  - component: {fileID: 2532845032765193942}
+  - component: {fileID: 2532845032765193941}
+  - component: {fileID: 2532845032765193940}
+  - component: {fileID: 2532845032765193944}
   m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Enemy
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1963669650126540531
+--- !u!4 &2532845032765193943
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2344389324965976565}
+  m_GameObject: {fileID: 2532845032765193939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.94146246, y: -3.1472318, z: -0.771649}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.23, y: -3.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.45123}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8638098636359241929
+--- !u!33 &2532845032765193942
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2344389324965976565}
+  m_GameObject: {fileID: 2532845032765193939}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7744639715899314883
+--- !u!23 &2532845032765193941
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2344389324965976565}
+  m_GameObject: {fileID: 2532845032765193939}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d7832053c37a14c4a846e3a30add0551, type: 2}
+  - {fileID: 2100000, guid: 00df35da1a37e464a980e2f8abb64f88, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,46 +79,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1845016225122379609
+--- !u!65 &2532845032765193940
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2344389324965976565}
+  m_GameObject: {fileID: 2532845032765193939}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-831320506690426173
+--- !u!114 &2532845032765193944
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2344389324965976565}
+  m_GameObject: {fileID: 2532845032765193939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38c9aaabf586c7e4ab3e4a8ebcd1fc9f, type: 3}
+  m_Script: {fileID: 11500000, guid: cdc2def89f2d6364da411a9fe3ad5161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
-  enemyPreFab: {fileID: 2344389324965976565}
---- !u!54 &-88160650253421430
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2344389324965976565}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  laserPreFab: {fileID: 3639837580716722379, guid: 3de61288ef5e1a449b98642c880c2f63,
+    type: 3}
+  speed: 10
+  fireRate: 0.3
