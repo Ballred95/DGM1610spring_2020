@@ -17,11 +17,11 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
        
-       // if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E))
 
-      //  {
-           // Instantiate(enemyPreFab[enemyIndex]) Vector3(0, 0, 0), 
-        //}
+        {
+            Instantiate(enemyPreFab[enemyIndex]) Vector3(0, 0, 0);
+        }
 
     }
 }
