@@ -22,6 +22,7 @@ public class SpawnManager : MonoBehaviour
         {
             Instantiate(enemyPreFab[enemyIndex], new Vector3(5, 5, -5), enemyPreFab[enemyIndex].transform.rotation);
         }
-
+        else if (Input.GetKeyDown(KeyCode.R))
+        { Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation); }
     }
 }
