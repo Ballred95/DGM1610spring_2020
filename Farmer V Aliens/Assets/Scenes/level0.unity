@@ -1009,12 +1009,12 @@ PrefabInstance:
     - target: {fileID: 4007546627533940240, guid: 6b7641202e8b8aa4db5888f2140b6b49,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0398939
+      value: 3.45
       objectReference: {fileID: 0}
     - target: {fileID: 4007546627533940240, guid: 6b7641202e8b8aa4db5888f2140b6b49,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.5648804
+      value: -4.54
       objectReference: {fileID: 0}
     - target: {fileID: 4007546627533940240, guid: 6b7641202e8b8aa4db5888f2140b6b49,
         type: 3}
@@ -1094,7 +1094,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bc74a95e838b748bb459ad99f5a8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPreFab: []
+  enemyPreFab:
+  - {fileID: 7753605028057488702, guid: ce46ea01da9c2114cb7cd51177210f73, type: 3}
+  - {fileID: 4639442457750507254, guid: 99150444a59797e4e9c6a3b89149b1cf, type: 3}
+  - {fileID: 7753605028057488702, guid: ce46ea01da9c2114cb7cd51177210f73, type: 3}
+  - {fileID: 7753605028057488702, guid: ce46ea01da9c2114cb7cd51177210f73, type: 3}
+  - {fileID: 4639442457750507254, guid: 99150444a59797e4e9c6a3b89149b1cf, type: 3}
   enemyIndex: 0
 --- !u!4 &1192574957
 Transform:
@@ -1104,7 +1109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192574955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6059904, y: 5.24, z: -2.5900729}
+  m_LocalPosition: {x: -1.6059904, y: 7.58, z: -2.5900729}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

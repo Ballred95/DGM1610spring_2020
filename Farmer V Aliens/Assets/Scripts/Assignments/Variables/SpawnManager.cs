@@ -20,7 +20,7 @@ public class SpawnManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
 
         {
-            Instantiate(enemyPreFab[enemyIndex], new Vector3(0, 0, 0), enemyPreFab[enemyIndex].transform.rotation);
+            Instantiate(enemyPreFab[enemyIndex], new Vector3(5, 5, -5), enemyPreFab[enemyIndex].transform.rotation);
         }
 
     }
