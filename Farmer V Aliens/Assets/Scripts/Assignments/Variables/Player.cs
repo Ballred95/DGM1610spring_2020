@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     private GameObject laserPreFab;
     public float fireRate = 0.5f;
     private float nextFire = 0f;
+    public int lives = 3;
 
 
     // Start is called before the first frame update
@@ -103,7 +104,8 @@ public class Player : MonoBehaviour
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
     }
 
-    
+    public void Damage ()
+    { lives--; }
 }
 
 
