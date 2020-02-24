@@ -30,7 +30,8 @@ public class EneyMove : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //Destroy(this.gameObject);
+        if (collision.gameObject.CompareTag("Player"))
+            Debug.Log("took damager");
     }
 
 }

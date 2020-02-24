@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public float fireRate = 0.5f;
     private float nextFire = 0f;
     public int lives = 3;
+    
 
 
     // Start is called before the first frame update
@@ -30,7 +31,7 @@ public class Player : MonoBehaviour
     {
         moveSpeed = 10f;
         turnSpeed = 150f;
-
+        
 
         /*transform.Translate(moveSpeed * Input.GetAxis("Horizontal"), 0f, moveSpeed * Input.GetAxis("Vertical")); */
 
@@ -45,10 +46,14 @@ public class Player : MonoBehaviour
             Debug.Log("Hit space key");
         }
 
+        if (lives <= 0)
+        {
+            Destroy(this.gameObject);
+        }
 
     }
 
-
+    
 
     private void OnCollisionEnter(Collision other)
 
@@ -59,11 +64,12 @@ public class Player : MonoBehaviour
             Debug.Log("Colliding with floor");
         }
 
+
         else if (other.gameObject.CompareTag("Obstacle"))
 
         {
             Debug.Log("Colliding with Obstacle");
-
+            Damage();
 
         }
 
@@ -71,12 +77,7 @@ public class Player : MonoBehaviour
         {
 
             Debug.Log("hit button");
-        }
-                
-
-                
-                
-                
+        }        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -106,6 +107,9 @@ public class Player : MonoBehaviour
 
     public void Damage ()
     { lives--; }
+
+    
+    
 }
 
 
