@@ -138,5 +138,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   target: {x: 0, y: 0, z: 0}
-  moveSpeed: 5
+  moveSpeed: 15
   damage: 70
