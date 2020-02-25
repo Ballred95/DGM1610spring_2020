@@ -34,7 +34,9 @@ public class EneyMove : MonoBehaviour
     private void FixedUpdate()
     {
         //Add Force
-        enemyRB.AddForce((player.transform.position - transform.position).normalized *moveSpeed);
+        enemyRB.AddForce((player.transform.position - transform.position).normalized*moveSpeed);
+        //Add Velocity
+       
     }
 
 }
