@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public float fireRate = 0.5f;
     private float nextFire = 0f;
     public int lives = 3;
+    private Rigidbody playerRB;
     
 
 
@@ -97,6 +98,7 @@ public class Player : MonoBehaviour
 
     void Movement()
     {
+
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
 

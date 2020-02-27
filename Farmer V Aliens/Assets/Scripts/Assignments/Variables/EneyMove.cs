@@ -9,6 +9,7 @@ public class EneyMove : MonoBehaviour
     public int moveSpeed;
     public int damage;
     private Rigidbody enemyRB;
+    
 
     // Start is called before the first frame update
     void Start()
