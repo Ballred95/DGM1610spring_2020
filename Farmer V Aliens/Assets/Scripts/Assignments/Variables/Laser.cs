@@ -17,7 +17,7 @@ public class Laser : MonoBehaviour
     {
 
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        Destroy(this.gameObject, 5f);
+        //Destroy(this.gameObject, 5f);
 
         
  
@@ -28,7 +28,7 @@ public class Laser : MonoBehaviour
     {
         if(collision.collider.CompareTag("Obstacle"))
         {
-            Destroy(collision.gameObject);
+           // Destroy(collision.gameObject);
             Debug.Log("Destroyed obstacle");
         }
     }

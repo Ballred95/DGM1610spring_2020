@@ -15,17 +15,17 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = maxHealth; 
     }
 
-   public void TakeDamage(int amount) { 
-    currentHealth -= amount
-            
-    if (currentHealth <= 0)
+   public void TakeDamage(int amount) {
+        currentHealth -= amount;
 
-        { currentHealth = 0;
 
-            print("enemy is dead");
+        if (currentHealth <= 0)
+        {
+            //Keep score at zero
+            currentHealth = 0;
+            print("Enemy is Dead!");
+
         }
 
-
-            
-    }
+        }
 }

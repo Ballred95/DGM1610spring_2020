@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7753605028057488703}
   - component: {fileID: 7753605028057488675}
   - component: {fileID: 8760619463917644465}
+  - component: {fileID: -822998674081593375}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Obstacle
@@ -126,3 +127,19 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   moveSpeed: 15
   damage: 70
+--- !u!114 &-822998674081593375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7753605028057488702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2763921a11b6f040b92b2c3f4bbb391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 100
+  spawnPoint: {fileID: 0}
+  points: 0

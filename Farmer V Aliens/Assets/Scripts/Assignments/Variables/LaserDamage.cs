@@ -10,12 +10,12 @@ public class LaserDamage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(DestroyBullet)()
+        StartCoroutine(DestroyBullet());
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             var hit = collision.gameObject;
             var health = hit.GetComponent<EnemyHealth>();
