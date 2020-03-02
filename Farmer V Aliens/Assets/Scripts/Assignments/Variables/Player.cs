@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-        moveSpeed = 10f;
+        moveSpeed = 20f;
         turnSpeed = 150f;
         
 
