@@ -15,7 +15,7 @@ public class EneyMove : MonoBehaviour
     void Start()
     {
        
-
+        
         enemyRB = GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
 

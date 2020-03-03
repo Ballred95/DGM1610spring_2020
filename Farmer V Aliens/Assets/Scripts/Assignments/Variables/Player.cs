@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
 
       
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire)
-        {
+       {
             nextFire = fireRate + Time.time;
             Instantiate(laserPreFab, transform.position + (Vector3.forward * 2), Quaternion.identity);
             Debug.Log("Hit space key");

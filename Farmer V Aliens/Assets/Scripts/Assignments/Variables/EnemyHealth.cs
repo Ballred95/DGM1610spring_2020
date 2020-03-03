@@ -12,7 +12,9 @@ public class EnemyHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         currentHealth = maxHealth; 
+        spawnPoint
     }
 
    public void TakeDamage(int amount) {
