@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public int lives = 3;
     private Rigidbody playerRB;
     
+    
 
 
     // Start is called before the first frame update
@@ -43,7 +44,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire)
        {
             nextFire = fireRate + Time.time;
-            Instantiate(laserPreFab, transform.position + (Vector3.forward * 2), Quaternion.identity);
+            Instantiate(laserPreFab, transform.position + (Vector3.forward * 2), transform.rotation.normalized);
             Debug.Log("Hit space key");
         }
 
