@@ -306,6 +306,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: spaceceilinggun
       objectReference: {fileID: 0}
+    - target: {fileID: 5232488858435980449, guid: 496e4a754e81e764b8ad178cbe69c238,
+        type: 3}
+      propertyPath: m_Name
+      value: GunBarrel
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 496e4a754e81e764b8ad178cbe69c238,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -375,11 +380,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.1583
-      objectReference: {fileID: 0}
-    - target: {fileID: 5232488858435980449, guid: 496e4a754e81e764b8ad178cbe69c238,
-        type: 3}
-      propertyPath: m_Name
-      value: GunBarrel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 496e4a754e81e764b8ad178cbe69c238, type: 3}
@@ -518,9 +518,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2849233cf277c1747a7858cac05ad2f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 54
-  money: 34
-  cost: 16
+  amount: 0
+  money: 0
+  cost: 0
   cookieBox: 20
   waterBottle: 0
   rbi: 0
@@ -568,9 +568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPreFab:
-  - {fileID: 7753605028057488702, guid: ce46ea01da9c2114cb7cd51177210f73, type: 3}
-  - {fileID: 3604661344418151216, guid: 21d0837757a22314dbf13f91f2db817d, type: 3}
-  - {fileID: 7753605028057488702, guid: ce46ea01da9c2114cb7cd51177210f73, type: 3}
   - {fileID: 7753605028057488702, guid: ce46ea01da9c2114cb7cd51177210f73, type: 3}
   - {fileID: 3604661344418151216, guid: 21d0837757a22314dbf13f91f2db817d, type: 3}
   enemyIndex: 0
