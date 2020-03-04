@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
     public Transform spawnPoint;
-    public int points;
+    public int points = 15;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +26,12 @@ public class EnemyHealth : MonoBehaviour
             //Keep score at zero
             currentHealth = 0;
             print("Enemy is Dead!");
-            transform.position = new Vector3(Random.Range(-7f, 8f), 8, .32f);
-
+            transform.position = spawnPoint.position;
+            transform.rotation = spawnPoint.rotation;
+            currentHealth = maxHealth;
         }
 
         }
+
+  
 }
