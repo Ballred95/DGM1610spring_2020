@@ -13,8 +13,8 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
 
-        currentHealth = maxHealth; 
-        spawnPoint
+        currentHealth = maxHealth;
+       
     }
 
    public void TakeDamage(int amount) {
@@ -26,6 +26,7 @@ public class EnemyHealth : MonoBehaviour
             //Keep score at zero
             currentHealth = 0;
             print("Enemy is Dead!");
+            transform.position = new Vector3(Random.Range(-7f, 8f), 8, .32f);
 
         }
 
