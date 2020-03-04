@@ -48,10 +48,10 @@ public class Player : MonoBehaviour
             Debug.Log("Hit space key");
         }
 
-        if (lives <= 0)
+       /* if (lives <= 0)
         {
             Destroy(this.gameObject);
-        }
+        } */
 
     }
 
