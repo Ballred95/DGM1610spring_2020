@@ -22,7 +22,7 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         
-        { Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation); }
+       // { Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation); }
        
        
 
