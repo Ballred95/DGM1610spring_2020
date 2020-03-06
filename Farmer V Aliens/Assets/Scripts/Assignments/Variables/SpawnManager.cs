@@ -21,8 +21,13 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-       // { Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation); }
+
+        //if(nanobot <= 100)
+        StartCoroutine("SpawnRoutine");
+
+       // {
+           // Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation); }
+        //NanoBots 
        
        
 
@@ -37,4 +42,19 @@ public class SpawnManager : MonoBehaviour
      
 
     }
-}
+    int a = 5;
+    IEnumerable SpawnRoutine()
+
+    { yield return null;
+
+       
+        
+            while (a > 0)
+
+            {
+                
+                Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation);
+            a--;
+        }
+        }
+  }
