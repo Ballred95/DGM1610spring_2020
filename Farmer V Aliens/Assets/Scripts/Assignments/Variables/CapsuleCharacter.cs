@@ -5,6 +5,7 @@ using UnityEngine;
 public class CapsuleCharacter : MonoBehaviour
 {
     private CharacterController _controller;
+    private float _speed = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +20,8 @@ public class CapsuleCharacter : MonoBehaviour
         // define direction based on input 
         Vector3 direction = new Vector3(horizontalInput, 0, 0);
         //move based on that direction
+        Vector3 velocity = direction * _speed;
 
-
-        _controller.Move(direction * Time.deltaTime);
+        _controller.Move(velocity * Time.deltaTime);
     }
 }
