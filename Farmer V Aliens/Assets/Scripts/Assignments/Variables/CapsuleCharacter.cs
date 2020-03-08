@@ -14,6 +14,13 @@ public class CapsuleCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // get horizontal input
+        float horizontalInput = Input.GetAxis("Horizontal");
+        // define direction based on input 
+        Vector3 direction = new Vector3(horizontalInput, 0, 0);
+        //move based on that direction
+
+
+        _controller.Move(direction * Time.deltaTime);
     }
 }
