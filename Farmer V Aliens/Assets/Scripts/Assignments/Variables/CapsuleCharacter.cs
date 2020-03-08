@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CapsuleCharacter : MonoBehaviour
 {
+    private CharacterController _controller;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
