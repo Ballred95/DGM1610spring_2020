@@ -8,6 +8,7 @@ public class CapsuleCharacter : MonoBehaviour
     private float _speed = 20;
     private float _graivty = 10.0f;
     private float jumpHeight = 50f;
+    private float yVelocity; 
     // Start is called before the first frame update
     void Start()
     {
@@ -31,15 +32,17 @@ public class CapsuleCharacter : MonoBehaviour
 
         if (_controller.isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
-            velocity.y = jumpHeight;
+            yVelocity = jumpHeight;
 
         }
 
         else
         {
-            velocity.y -= _graivty;
+            yVelocity -= _graivty;
             
         }
+
+        velocity.y = yVelocity;
 
         _controller.Move(velocity * Time.deltaTime);
 
