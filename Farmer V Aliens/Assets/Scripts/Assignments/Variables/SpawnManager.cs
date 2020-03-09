@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPreFab;
     public int enemyIndex;
+    public int numEnemies = 5;
 
     private void Awake()
     {
@@ -15,7 +16,12 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+
+        for (int i = 0; i < numEnemies; i++)
+        {
+            Debug.Log("Creating enemy number: " + i);
+        }
+
     }
 
     // Update is called once per frame
@@ -57,4 +63,5 @@ public class SpawnManager : MonoBehaviour
             a--;
         }
         }
+  
   }

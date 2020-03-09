@@ -30,8 +30,9 @@ public class CapsuleCharacter : MonoBehaviour
 
         _controller.Move(velocity * Time.deltaTime);
 
-        if (_controller.isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        if (_controller.isGrounded == true )
         {
+            if(Input.GetKeyDown(KeyCode.Space))
             yVelocity = jumpHeight;
 
         }
