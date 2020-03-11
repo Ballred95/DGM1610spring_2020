@@ -19,7 +19,8 @@ public class SpawnManager : MonoBehaviour
 
         for (int i = 0; i < numEnemies; i++)
         {
-            Debug.Log("Creating enemy number: " + i);
+            //Debug.Log("Creating enemy number: " + i);
+            Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation);
         }
 
     }

@@ -8,7 +8,8 @@ public class CapsuleCharacter : MonoBehaviour
     private float _speed = 20;
     private float _graivty = 10.0f;
     private float jumpHeight = 50f;
-    private float yVelocity; 
+    private float yVelocity;
+    
     // Start is called before the first frame update
     void Start()
     {
