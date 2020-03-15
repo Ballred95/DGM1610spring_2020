@@ -9,9 +9,16 @@ public class Loops : MonoBehaviour
 
     public int numEnemies = 5;
     public int cupsInSink = 10;
+    string[] strings = new string[3];
+
+    
     // Start is called before the first frame update
     void Start()
     {
+
+        strings[0] = "one";
+        strings[1] = "two";
+        strings[2] = "Three";
 
         for (int i = 0; i < numEnemies; i++) 
         {
@@ -36,6 +43,9 @@ public class Loops : MonoBehaviour
             print("Hi World");
         }
         while (shouldContinue == true);
+
+        foreach(string item in strings)
+        { print(item); }
 
     }
 
