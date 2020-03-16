@@ -10,7 +10,7 @@ public class Loops : MonoBehaviour
     public int numEnemies = 5;
     public int cupsInSink = 10;
     string[] strings = new string[3];
-    public int nanoCount = 100;
+    public int nanoCount = 2;
     public GameObject[] enemyPreFab;
 
 
@@ -23,17 +23,18 @@ public class Loops : MonoBehaviour
         strings[1] = "two";
         strings[2] = "Three";
 
-        for (int i = 0; i < numEnemies; i++) 
-        {
+       // for (int i = 0; i < numEnemies; i++) 
+       // {
 
-            Debug.Log("Creating enemy number:" + i);
+            //Debug.Log("Creating enemy number:" + i);
 
-        }
+       // }
 
         for( int i = 0; i < nanoCount; i++)
         {
 
             Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation);
+            Debug.Log("Creating enemy number:" + i);
         }
 
         while(cupsInSink > 0)
