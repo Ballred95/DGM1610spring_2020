@@ -10,6 +10,9 @@ public class Loops : MonoBehaviour
     public int numEnemies = 5;
     public int cupsInSink = 10;
     string[] strings = new string[3];
+    public int nanoCount = 100;
+    public GameObject[] enemyPreFab;
+
 
     
     // Start is called before the first frame update
@@ -27,6 +30,12 @@ public class Loops : MonoBehaviour
 
         }
 
+        for( int i = 0; i < nanoCount; i++)
+        {
+
+            Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation);
+        }
+
         while(cupsInSink > 0)
 
         {
@@ -41,6 +50,8 @@ public class Loops : MonoBehaviour
         {
 
             print("Hi World");
+            print("Give me");
+            
         }
         while (shouldContinue == true);
 

@@ -6,7 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPreFab;
     public int enemyIndex;
-    public int numEnemies = 5;
+    public int numEnemies = 30;
 
     private void Awake()
     {
@@ -17,11 +17,11 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
 
-        for (int i = 0; i < numEnemies; i++)
-        {
+       // for (int i = 0; i < numEnemies; i++)
+       // {
             //Debug.Log("Creating enemy number: " + i);
-            Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation);
-        }
+           // Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation);
+        //}
 
     }
 
@@ -30,7 +30,7 @@ public class SpawnManager : MonoBehaviour
     {
 
         //if(nanobot <= 100)
-        StartCoroutine("SpawnRoutine");
+        //StartCoroutine("SpawnRoutine");
 
        // {
            // Instantiate(enemyPreFab[1], new Vector3(5, 5, -5), enemyPreFab[1].transform.rotation); }
