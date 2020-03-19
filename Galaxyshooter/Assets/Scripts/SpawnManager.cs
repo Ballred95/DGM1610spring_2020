@@ -23,7 +23,7 @@ public class SpawnManager : MonoBehaviour
         //while loop
         while(true)
         {
-            Instantiate(enemyPreFab, new Vector3(0, 0, 0), Quaternion.identity);
+            Instantiate(enemyPreFab, new Vector3(0, 7.15f, 0), Quaternion.identity);
             yield return new WaitForSeconds(5);
         }
         
