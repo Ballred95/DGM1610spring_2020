@@ -601,7 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numEnemies: 5
   cupsInSink: 10
-  nanoCount: 100
+  nanoCount: 200
   enemyPreFab:
   - {fileID: 0}
   - {fileID: 3604661344418151216, guid: 21d0837757a22314dbf13f91f2db817d, type: 3}
@@ -962,17 +962,17 @@ PrefabInstance:
     - target: {fileID: 4192549577476470294, guid: c4723fe7874e8664380ae47244928ebe,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.3039503
+      value: 0.47201928
       objectReference: {fileID: 0}
     - target: {fileID: 4192549577476470294, guid: c4723fe7874e8664380ae47244928ebe,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.3039503
+      value: 0.47201928
       objectReference: {fileID: 0}
     - target: {fileID: 4192549577476470294, guid: c4723fe7874e8664380ae47244928ebe,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.3039503
+      value: 0.47201928
       objectReference: {fileID: 0}
     - target: {fileID: -6008922201587741910, guid: c4723fe7874e8664380ae47244928ebe,
         type: 3}
@@ -1003,7 +1003,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 4192549577476470292, guid: c4723fe7874e8664380ae47244928ebe, type: 3}
@@ -1026,7 +1026,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0

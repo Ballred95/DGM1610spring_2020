@@ -6,6 +6,7 @@ public class enemy : MonoBehaviour
 {
     public float speed = 4;
     public GameObject enemyPreFab;
+  
 
     // Start is called before the first frame update
     void Start()
@@ -31,12 +32,18 @@ public class enemy : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
-        { Destroy(other.gameObject); }
+        {
+            other.transform.GetComponent<Player>().Damage();
+            
+
+        }
 
         else if (other.gameObject.CompareTag("Laser"))
+        {
 
             Instantiate(enemyPreFab, new Vector3(Random.Range(-7f, 8f), 8, .32f), Quaternion.identity);
 
-        { Destroy(gameObject); }
+            Destroy(gameObject);
+        }
     }
 }
