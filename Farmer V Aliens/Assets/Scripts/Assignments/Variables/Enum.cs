@@ -17,6 +17,10 @@ public class Enum : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(currentDay == Days.mon)
+        {
+            print("Go back to bed!");
+
+        }
     }
 }
