@@ -6,6 +6,9 @@ public class SpawnManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject enemyPreFab;
+    [SerializeField]
+    private GameObject enemyContainer;
+    private bool stopSpawning = false;
     void Start()
     {
         StartCoroutine(SpawnRoutine());
@@ -21,16 +24,24 @@ public class SpawnManager : MonoBehaviour
     IEnumerator SpawnRoutine()
     {
         //while loop
-        while(true)
+        while(stopSpawning == false)
         {
-            Instantiate(enemyPreFab, new Vector3(0, 7.15f, 0), Quaternion.identity);
-            yield return new WaitForSeconds(5);
+           GameObject newEnemy = Instantiate(enemyPreFab, new Vector3(0, 7.15f, 0), Quaternion.identity);
+            newEnemy.transform.parent = enemyContainer.transform;
+            yield return new WaitForSeconds(1);
         }
         
         //infinite loop
         //instnatiate enemyprefab
         // yield waitfor5seconds 
 
+
+    }
+
+    public void onPlayerDeath()
+
+    {
+        stopSpawning = true;
 
     }
 }

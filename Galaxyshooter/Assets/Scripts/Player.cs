@@ -12,11 +12,21 @@ public class Player : MonoBehaviour
     private float fireRate = 0.5f;
     private float canFire = -1f;
     public int lives = 3;
+    private SpawnManager spawnManager;
+    
     // Start is called before the first frame update
     void Start()
     {
         //Take current position and assign as start position. 
         transform.position = new Vector3(0, -3.38f, 0);
+        spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+
+        if(spawnManager == null)
+
+        {
+
+            Debug.LogError("Spawn manager is null, error");
+        }
 
 
 
@@ -116,6 +126,9 @@ public class Player : MonoBehaviour
         {
 
             Destroy(this.gameObject);
+            spawnManager.onPlayerDeath();
+            
+            
         }
 
     }

@@ -29,11 +29,12 @@ public class enemy : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             other.transform.GetComponent<Player>().Damage();
+            Destroy(this.gameObject);
             
 
         }
@@ -41,7 +42,7 @@ public class enemy : MonoBehaviour
         else if (other.gameObject.CompareTag("Laser"))
         {
 
-            Instantiate(enemyPreFab, new Vector3(Random.Range(-7f, 8f), 8, .32f), Quaternion.identity);
+            //Instantiate(enemyPreFab, new Vector3(Random.Range(-7f, 8f), 8, .32f), Quaternion.identity);
 
             Destroy(gameObject);
         }
