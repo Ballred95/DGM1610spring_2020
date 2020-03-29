@@ -21,7 +21,7 @@ public class SpawnManager : MonoBehaviour
         
         if(killAll == null)
         {
-            Destroy(enemyPreFab);
+            Destroy(enemyContainer);
 
         }
 
