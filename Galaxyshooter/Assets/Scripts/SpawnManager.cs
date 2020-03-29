@@ -9,6 +9,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private GameObject enemyContainer;
     private bool stopSpawning = false;
+    public GameObject killAll;
     void Start()
     {
         StartCoroutine(SpawnRoutine());
@@ -18,6 +19,11 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         
+        if(killAll == null)
+        {
+            Destroy(enemyPreFab);
+
+        }
 
     }
 
@@ -44,4 +50,6 @@ public class SpawnManager : MonoBehaviour
         stopSpawning = true;
 
     }
+
+    
 }

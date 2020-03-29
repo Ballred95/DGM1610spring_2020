@@ -410,6 +410,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2532845032765193939, guid: 75dd35dc841c38c49909a565685466b9,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4376365350703576107, guid: 75dd35dc841c38c49909a565685466b9,
         type: 3}
       propertyPath: m_IsTrigger
@@ -449,11 +454,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2532845032765193939, guid: 75dd35dc841c38c49909a565685466b9,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2532845032765193943, guid: 75dd35dc841c38c49909a565685466b9,
         type: 3}
@@ -510,6 +510,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2532845032765193944, guid: 75dd35dc841c38c49909a565685466b9,
+        type: 3}
+      propertyPath: laserPreFab
+      value: 
+      objectReference: {fileID: 3088973354255580131, guid: afd886ec19bd0f243a231efe7b2d6956,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75dd35dc841c38c49909a565685466b9, type: 3}
 --- !u!1 &1922151113 stripped
@@ -598,6 +604,7 @@ MonoBehaviour:
   enemyPreFab: {fileID: 2344389324965976565, guid: a8c9d92e3cf1a414ebd4162b02c0e7df,
     type: 3}
   enemyContainer: {fileID: 1284481977}
+  killAll: {fileID: 1922151113}
 --- !u!4 &1976953727
 Transform:
   m_ObjectHideFlags: 0
