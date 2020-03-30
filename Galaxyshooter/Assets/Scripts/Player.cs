@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public int lives = 3;
     private SpawnManager spawnManager;
     public GameObject tripleShot;
+    public bool tripleShotActive = true;
     
     // Start is called before the first frame update
     void Start()
@@ -107,6 +108,14 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > canFire)
         {
             canFire = Time.time + fireRate;
+            if (tripleShotActive == true)
+
+            {
+                Instantiate(tripleShot, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
+
+            }
+            else 
+
             Instantiate(laserPreFab, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
             Debug.Log("Hit space key");
         }
@@ -120,7 +129,7 @@ public class Player : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.E))
         {
-            Instantiate(tripleShot, transform.position, Quaternion.identity);
+            Instantiate(tripleShot, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
 
         }
 
