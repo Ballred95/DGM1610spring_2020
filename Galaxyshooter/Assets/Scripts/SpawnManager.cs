@@ -10,8 +10,10 @@ public class SpawnManager : MonoBehaviour
     private GameObject enemyContainer;
     private bool stopSpawning = false;
     public GameObject killAll;
+    public GameObject tripleShotPowerUpPreFab;
     void Start()
     {
+        Instantiate(tripleShotPowerUpPreFab, new Vector2(.42f, 6.85f), Quaternion.identity); 
         StartCoroutine(SpawnRoutine());
     }
 
