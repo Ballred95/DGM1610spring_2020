@@ -14,7 +14,8 @@ public class Player : MonoBehaviour
     public int lives = 3;
     private SpawnManager spawnManager;
     public GameObject tripleShot;
-    public bool tripleShotActive = true;
+    public bool tripleShotActive = false;
+    
     
     // Start is called before the first frame update
     void Start()
