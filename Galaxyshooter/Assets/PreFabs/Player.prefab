@@ -44,11 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdc2def89f2d6364da411a9fe3ad5161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPreFab: {fileID: 3639837580716722379, guid: 3de61288ef5e1a449b98642c880c2f63,
+  laserPreFab: {fileID: 3088973354255580131, guid: afd886ec19bd0f243a231efe7b2d6956,
     type: 3}
-  speed: 10
-  fireRate: 0.3
+  speed: 5.3
+  fireRate: 0.5
   lives: 3
+  tripleShot: {fileID: 8105106998163277694, guid: 7039a07e10b45f144860f6d098c746e3,
+    type: 3}
 --- !u!61 &4376365350703576107
 BoxCollider2D:
   m_ObjectHideFlags: 0
