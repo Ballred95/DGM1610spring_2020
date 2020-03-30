@@ -13,8 +13,9 @@ public class SpawnManager : MonoBehaviour
     public GameObject tripleShotPowerUpPreFab;
     void Start()
     {
-        Instantiate(tripleShotPowerUpPreFab, new Vector2(.42f, 6.85f), Quaternion.identity); 
+       // Instantiate(tripleShotPowerUpPreFab, new Vector2(.42f, 6.85f), Quaternion.identity); 
         StartCoroutine(SpawnRoutine());
+        StartCoroutine(SpawnPowerRoutine());
     }
 
     // Update is called once per frame
@@ -26,6 +27,8 @@ public class SpawnManager : MonoBehaviour
             Destroy(enemyContainer);
 
         }
+
+       
 
     }
 
@@ -43,6 +46,20 @@ public class SpawnManager : MonoBehaviour
         //instnatiate enemyprefab
         // yield waitfor5seconds 
 
+
+    }
+
+    IEnumerator SpawnPowerRoutine()
+
+    {
+
+        while(stopSpawning == false)
+        {
+
+            Instantiate(tripleShotPowerUpPreFab, new Vector2(.42f, 6.85f), Quaternion.identity);
+            yield return new WaitForSeconds(2);
+
+        }
 
     }
 
