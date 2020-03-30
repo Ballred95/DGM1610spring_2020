@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private GameObject laserPreFab; 
+    private GameObject laserPreFab;
     [SerializeField]
     public float speed = 5.3f;
     [SerializeField]
@@ -15,8 +15,8 @@ public class Player : MonoBehaviour
     private SpawnManager spawnManager;
     public GameObject tripleShot;
     public bool tripleShotActive = false;
-    
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
         transform.position = new Vector3(0, -3.38f, 0);
         spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
 
-        if(spawnManager == null)
+        if (spawnManager == null)
 
         {
 
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
         }
     }
 
-   void FireLaser()
+    void FireLaser()
     {
         //if i hit space key, 
         //spawn gameObject
@@ -114,10 +114,14 @@ public class Player : MonoBehaviour
             {
                 Instantiate(tripleShot, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
 
-            }
-            else 
 
-            Instantiate(laserPreFab, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
+            }
+
+
+
+            else
+
+                Instantiate(laserPreFab, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
             Debug.Log("Hit space key");
         }
 
@@ -128,7 +132,7 @@ public class Player : MonoBehaviour
     {
 
 
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Instantiate(tripleShot, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
 
@@ -141,20 +145,36 @@ public class Player : MonoBehaviour
 
     {
 
-        lives --;
+        lives--;
+
+    }
+
+
+    public void TripleShotActive()
+    {
+        tripleShotActive = true;
+        StartCoroutine(TripleShotPowerDownRoutine());
 
     }
 
     void Death()
     {
-        if(lives <=0)
+        if (lives <= 0)
         {
 
             Destroy(this.gameObject);
             spawnManager.onPlayerDeath();
-            
-            
+
+
         }
+
+    }
+
+    IEnumerator TripleShotPowerDownRoutine()
+    {
+
+        yield return new WaitForSeconds(2.0f);
+        tripleShotActive = false;
 
     }
 }

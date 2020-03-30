@@ -141,5 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb164d1075abddf4c8b6bfaf537b8cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tripleMoveSpeed: 10
+  tripleMoveSpeed: 1
   tripleDir: {x: 0, y: -1, z: 0}

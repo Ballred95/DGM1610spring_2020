@@ -5,7 +5,7 @@ using UnityEngine;
 public class TripleShotPowerUp : MonoBehaviour
 {
     //public GameObject tripleShotPowerUpPreFab;
-    public float tripleMoveSpeed = 10f;
+    public float tripleMoveSpeed = 1f;
     public Vector3 tripleDir = Vector3.down; 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,8 @@ public class TripleShotPowerUp : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            other.transform.GetComponent<Player>().tripleShotActive = true;
+            other.transform.GetComponent<Player>().TripleShotActive();
+           
             Destroy(gameObject);
 
         }
