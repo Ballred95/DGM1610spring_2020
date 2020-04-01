@@ -57,7 +57,7 @@ public class SpawnManager : MonoBehaviour
         {
 
             Instantiate(tripleShotPowerUpPreFab, new Vector2(.42f, 6.85f), Quaternion.identity);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(Random.Range(1f, 5f));
 
         }
 
