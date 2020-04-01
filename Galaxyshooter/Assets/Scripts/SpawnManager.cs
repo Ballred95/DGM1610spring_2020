@@ -11,6 +11,7 @@ public class SpawnManager : MonoBehaviour
     private bool stopSpawning = false;
     public GameObject killAll;
     public GameObject tripleShotPowerUpPreFab;
+    public GameObject speedPowerUpPreFab;
     void Start()
     {
        // Instantiate(tripleShotPowerUpPreFab, new Vector2(.42f, 6.85f), Quaternion.identity); 
@@ -59,6 +60,9 @@ public class SpawnManager : MonoBehaviour
             Instantiate(tripleShotPowerUpPreFab, new Vector2(.42f, 6.85f), Quaternion.identity);
             yield return new WaitForSeconds(Random.Range(1f, 5f));
 
+
+            Instantiate(speedPowerUpPreFab, new Vector2(.42f, 6.85f), Quaternion.identity);
+            yield return new WaitForSeconds(Random.Range(1f, 5f));
         }
 
     }

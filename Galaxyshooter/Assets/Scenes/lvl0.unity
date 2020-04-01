@@ -612,6 +612,8 @@ MonoBehaviour:
   killAll: {fileID: 1922151113}
   tripleShotPowerUpPreFab: {fileID: 8839436763564758239, guid: 5b96f76a51c8a6747b487f2c3c575dfa,
     type: 3}
+  speedPowerUpPreFab: {fileID: 1447151784237150432, guid: a61a521e30c480443a01bcb91f4735c6,
+    type: 3}
 --- !u!4 &1976953727
 Transform:
   m_ObjectHideFlags: 0

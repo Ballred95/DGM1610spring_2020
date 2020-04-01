@@ -6,7 +6,9 @@ public class TripleShotPowerUp : MonoBehaviour
 {
     //public GameObject tripleShotPowerUpPreFab;
     public float tripleMoveSpeed = 1f;
-    public Vector3 tripleDir = Vector3.down; 
+    public Vector3 tripleDir = Vector3.down;
+
+    public int powerUpID;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +26,22 @@ public class TripleShotPowerUp : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            other.transform.GetComponent<Player>().TripleShotActive();
-           
-            Destroy(gameObject);
+            if(powerUpID == 0)
+            {
+                other.transform.GetComponent<Player>().TripleShotActive();
+
+                Destroy(gameObject);
+            }
+
+            else if (powerUpID == 1)
+            {
+
+                Debug.Log("Speedboost collect");
+
+            }
+            
+
+
 
         }
     }
