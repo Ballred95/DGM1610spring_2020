@@ -7,12 +7,18 @@ public class Enum : MonoBehaviour
 
     enum Days {sun = 1, mon};
 
+    enum powerUp { speed, megaShot, health };
+
+    powerUp currentPowerUp;
+
     Days currentDay;
     // Start is called before the first frame update
     void Start()
     {
         currentDay = Days.sun;  
     }
+
+   
 
     // Update is called once per frame
     void Update()
