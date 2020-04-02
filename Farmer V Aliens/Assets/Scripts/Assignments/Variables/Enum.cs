@@ -15,7 +15,8 @@ public class Enum : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentDay = Days.sun;  
+        currentDay = Days.sun;
+        currentPowerUp = powerUp.speed;
     }
 
    
@@ -25,7 +26,26 @@ public class Enum : MonoBehaviour
     {
         if(currentDay == Days.mon)
         {
-            print("Go back to bed!");
+            Debug.Log("Go back to bed!");
+
+        }
+
+        if(currentPowerUp == powerUp.speed)
+        {
+
+            Debug.Log("Collected speed powerup");
+        }
+
+        if(currentPowerUp == powerUp.megaShot)
+        {
+            Debug.Log("Collected megashot");
+
+        }
+
+        if(currentPowerUp == powerUp.health)
+        {
+
+            Debug.Log("Collected health");
 
         }
     }
