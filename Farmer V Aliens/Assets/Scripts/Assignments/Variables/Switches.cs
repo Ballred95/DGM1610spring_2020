@@ -8,10 +8,12 @@ public class Switches : MonoBehaviour
     public string favHero;
     enum publidID { one, two, three };
 
-    public string whichOne;
+    public int whichOne;
     // Start is called before the first frame update
     void Start()
     {
+        
+
         if(favHero == "Superman")
         {
             print("Nerd Alert");
@@ -40,11 +42,20 @@ public class Switches : MonoBehaviour
         switch (whichOne)
         {
 
-            case "publicID.one":
-                print("dod");
+            case 0:
+                print("one Switch");
                     break;
 
+            case 1:
+                print("Two switch");
+                break;
+
+            default:
+                print("Am I a joke to you?");
+                break;
+
         }
+
 
 
     }
@@ -53,5 +64,13 @@ public class Switches : MonoBehaviour
     void Update()
     {
         
+    }
+
+
+    void SwitchStatement()
+    {
+
+
+
     }
 }
