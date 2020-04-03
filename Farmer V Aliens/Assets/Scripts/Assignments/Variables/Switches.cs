@@ -6,6 +6,9 @@ public class Switches : MonoBehaviour
 {
 
     public string favHero;
+    enum publidID { one, two, three };
+
+    public string whichOne;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,11 +31,22 @@ public class Switches : MonoBehaviour
                 break;
 
             case "Thor":
-                print("blah");
+                Debug.Log("blah");
                 break;
 
 
         }
+
+        switch (whichOne)
+        {
+
+            case "publicID.one":
+                print("dod");
+                    break;
+
+        }
+
+
     }
 
     // Update is called once per frame
