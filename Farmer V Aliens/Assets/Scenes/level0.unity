@@ -865,7 +865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   favHero: Thor
-  whichOne: one
+  myID: 1
 --- !u!1 &1215437788
 GameObject:
   m_ObjectHideFlags: 0

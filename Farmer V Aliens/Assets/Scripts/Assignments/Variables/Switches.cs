@@ -6,9 +6,10 @@ public class Switches : MonoBehaviour
 {
 
     public string favHero;
-    enum publidID { one, two, three };
+    enum PublicID { one, two, three };
+    [SerializeField]
+    PublicID myID;
 
-    public int whichOne;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,14 +40,14 @@ public class Switches : MonoBehaviour
 
         }
 
-        switch (whichOne)
+        switch (myID)
         {
 
-            case 0:
+            case PublicID.one:
                 print("one Switch");
                     break;
 
-            case 1:
+            case PublicID.two:
                 print("Two switch");
                 break;
 
