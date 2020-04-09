@@ -29,27 +29,16 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
 
-            transform.Translate(new Vector2(1, -1) * speed * Time.deltaTime);
+            transform.Translate(new Vector2(-1, 1) * speed * Time.deltaTime);
 
         }
 
         else if (Input.GetKey(KeyCode.DownArrow))
         {
 
-            transform.Translate(new Vector2(-1, 1) * speed * Time.deltaTime);
+            transform.Translate(new Vector2(1, -1) * speed * Time.deltaTime);
         }
 
-        else if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
-
-        }
-
-        else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Translate(new Vector2(.5f, 0) * speed * Time.deltaTime);
-
-        }
-
+        
     }
 }
