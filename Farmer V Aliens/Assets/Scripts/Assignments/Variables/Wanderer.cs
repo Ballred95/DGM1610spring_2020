@@ -12,6 +12,12 @@ public class Wanderer: MonoBehaviour
     private NavMeshAgent agent;
     private float timer;
 
+    //detection
+    public float alertDist;
+    public float attackDist;
+    private float distance;
+
+
     // Use this for initialization
     void OnEnable()
     {
