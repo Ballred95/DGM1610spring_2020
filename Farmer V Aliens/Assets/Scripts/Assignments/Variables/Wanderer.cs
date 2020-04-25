@@ -8,14 +8,14 @@ public class Wanderer: MonoBehaviour
     public float wanderRadius;
     public float wanderTimer;
 
-    private Transform target;
+    public Transform target;
     private NavMeshAgent agent;
     private float timer;
     private Vector3 heading;
 
 
     //detection
-    public float speed;
+    public float speed = 3;
     public float alertDist;
     public float attackDist;
     private float distance;
