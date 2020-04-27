@@ -39,6 +39,17 @@ public class TripleShotPowerUp : MonoBehaviour
                 Debug.Log("Speedboost collect");
 
             }
+
+            switch (powerUpID)
+            {
+                case 0:
+                    Player.TripleShotActive();
+                    break;
+                case 1:
+                    Debug.Log("speed boost collected");
+                    break;
+
+            }
             
 
 
