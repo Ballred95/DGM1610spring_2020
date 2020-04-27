@@ -26,7 +26,7 @@ public class TripleShotPowerUp : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            if(powerUpID == 0)
+            /*if(powerUpID == 0)
             {
                 other.transform.GetComponent<Player>().TripleShotActive();
 
@@ -38,12 +38,12 @@ public class TripleShotPowerUp : MonoBehaviour
 
                 Debug.Log("Speedboost collect");
 
-            }
+            }*/
 
             switch (powerUpID)
             {
                 case 0:
-                    Player.TripleShotActive();
+                    other.transform.GetComponent<Player>().TripleShotActive();
                     break;
                 case 1:
                     Debug.Log("speed boost collected");
