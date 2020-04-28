@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public bool tripleShotActive = false;
     [SerializeField]
     private int score;
+    private UIManager _uiManager;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,12 @@ public class Player : MonoBehaviour
         //Take current position and assign as start position. 
         transform.position = new Vector3(0, -3.38f, 0);
         spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
+        _uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
+
+        if(_uiManager == null)
+        {
+
+        }
 
         if (spawnManager == null)
 
@@ -154,6 +161,7 @@ public class Player : MonoBehaviour
     public void AddScore()
     {
         score += 10;
+        _uiManager.UpdateScore(score);
     }
 
 
