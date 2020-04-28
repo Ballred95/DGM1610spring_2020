@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     private SpawnManager spawnManager;
     public GameObject tripleShot;
     public bool tripleShotActive = false;
+    [SerializeField]
+    private int score;
 
 
     // Start is called before the first frame update
@@ -147,6 +149,11 @@ public class Player : MonoBehaviour
 
         lives--;
 
+    }
+
+    public void AddScore()
+    {
+        score += 10;
     }
 
 

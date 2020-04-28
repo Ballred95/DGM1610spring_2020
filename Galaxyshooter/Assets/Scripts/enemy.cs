@@ -6,12 +6,13 @@ public class enemy : MonoBehaviour
 {
     public float speed = 4;
     public GameObject enemyPreFab;
+    private Player _player;
   
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        _player = GameObject.Find("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -43,7 +44,12 @@ public class enemy : MonoBehaviour
         {
 
             //Instantiate(enemyPreFab, new Vector3(Random.Range(-7f, 8f), 8, .32f), Quaternion.identity);
-
+            
+            if(_player != null)
+            {
+                _player.AddScore();
+            }
+            
             Destroy(gameObject);
         }
     }
