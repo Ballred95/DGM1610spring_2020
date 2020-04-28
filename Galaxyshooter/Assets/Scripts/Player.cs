@@ -155,6 +155,7 @@ public class Player : MonoBehaviour
     {
 
         lives--;
+        _uiManager.UpdateDamage(lives);
 
     }
 
