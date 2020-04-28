@@ -35,6 +35,7 @@ public class enemy : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.transform.GetComponent<Player>().Damage();
+            other.transform.GetComponent<Player>().UpdateDamage();
             Destroy(this.gameObject);
             
 
